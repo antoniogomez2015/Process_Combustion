@@ -1,0 +1,16 @@
+
+
+orden de las capas multipass cargadas en una composición de combustion
+
+	Orden ascendente desde abajo hacia arriba
+
+		1_La capa más baja será "Difuse", y la ajustamos "Composite Controls/Surface/Transfer Mode/Normal"
+
+		2_la capa siguiente será "Reflection", y la ajustamos "Composite Controls/Surface/Transfer Mode/Add", ó añadir
+
+		3_la capa siguiente será "Shadow", y la ajustamos "Composite Controls/Surface/Transfer Mode/Multiply"
+
+		4_la capa siguiente será "Specular", y la ajustamos "Composite Controls/Surface/Transfer Mode/Add", ó añadir
+
+		5_la capa siguiente será "AO", y la ajustamos "Composite Controls/Surface/Transfer Mode/Soft Light"
+

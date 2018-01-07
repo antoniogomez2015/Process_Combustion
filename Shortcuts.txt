@@ -1,0 +1,212 @@
+
+Shortcuts:
+
+
+	Navegación:
+
+
+
+NOTE:	en combustion la vista de "Perpective" (Control + 1), sirve de viewport, de edición de los sources/recursos,
+
+	como layers, efectos, otros
+
+
+
+		perspective view (Control + 1):
+
+			Orbit: "V"
+
+			pan: "Move", (tab) + mouse left + click + draw (navegación fuera de la cámara)
+
+			zoom in/out: "Move", (tab) Alt + mouse left + click + draw + up/down (navegación fuera de la 
+
+			cámara)
+
+	
+			orbit (desde la cámara): "Rotate", (R) + mouse left + click + draw  (navegación fuera de la 
+
+			cámara)
+
+
+			Roll: "Rotate", (R) Alt + mouse left + click + draw + left/right (navegación fuera de la cámara)
+
+
+
+		canvas navegación:
+
+			Zoom View: Shift+Z
+
+			zoom Viewer: Z
+
+			pan: spacebar + mouse left + click + draw
+
+
+		workarea play/back:
+
+			para crear una área de reproducción y trabajo del timeline de una área deseada, 
+
+				1_tenemos una banda inferior debajo del cabezal amarilo, la cuál dispone de
+
+				2_un punto de entrada de color "Verde"
+
+				3_y un punto de salida de color "Rojo"
+
+			para manejar estos handles tenemos dos opciones, estas son:
+
+				1_para mover un handle a partir de su posición inicial: Control + mouse left + click + draw left/right, 
+
+				sobre la barra del "workarea", 
+
+
+					así, se moverá el handle más cercano al cursor
+
+
+				2_para mover un handle a la posición del cabezal: Shift/Alt + mouse + left + click + draw left+right, 
+
+				sobre la barra del "workarea", 
+
+
+					así, se moverá el handle más cercano al cursor, dicho handle tomará la posición ó ubicación del 
+
+					cursor automáticamente
+
+
+
+
+
+NOTE:	en combustion la vista de "cámara" (Control + 2), sirve de monitor para visualizar los resultados 
+
+	no para la edición
+
+
+
+		camara view (Control + 2):
+
+			pan: "Move", (tab) + mouse left + click + draw 
+
+			zoom in/out: "Move", (tab) Alt + mouse left + click + draw + up/down
+	
+			orbit (desde la cámara): "Rotate", (R) + mouse left + click + draw 
+
+			Roll: "Rotate", (R) Alt + mouse left + click + draw + left/right
+
+			pivot plane: poner el pivote de orbitación de la cámara en el plano del frame de la cámara; 
+
+			para esto seleccionamos la cámara y vamos las 
+
+				opciones de "Composite Controls/Trnaform/Pivot/", y en Z: colocamos "2000", así, 
+
+				el pivote que se encuentra en la cámará pasará al planos 
+
+
+				de la toma de la cámara, así, obtendremos una movimiento de la cámara más fluido, 
+
+				como el de after effects, maya, ...
+
+
+
+
+
+
+	Move: Tab
+
+	Scale: S
+
+	Rotate: R
+
+	Sketch: Y
+
+	Pivot: P
+
+	Pan: H
+
+	Marks: M
+
+	Orbit: V
+
+	Show Rules: Shift+L
+
+	Show Guides: Shift+U
+
+	Show Grid: Shift+G
+
+	Safe action On/Off: {
+
+	Filmstrip On/Off: [
+
+	Node On/off: Control+T
+
+	Vectorscope: Shift+V
+
+	
+
+	
+
+
+	Expand/maximizar Viewer: F11
+
+	Expand Timeline: Shift+F11
+
+	Expand Workspace: Shift+F10
+
+	_______________________________________
+
+	Toolbar: F2
+
+	Workspace: F3
+
+	_______________________________________
+
+	Timeline: F4
+
+	Operators: F5
+
+	Audio: F6
+
+	Tracker: F7
+
+	Composite Controls: F8
+	_______________________________________
+
+	Viewer Cámara: Control+1
+
+	Viewer Perspective: Control+2
+	_______________________________________
+	
+	Viewer Layer: Control+3	
+
+	Viewer Top: Control+4
+
+	Viewer From: Control+5
+
+	Viewer Right: Control+6
+
+	_______________________________________
+
+	View Mode/ Normal: Control+Shift+1
+
+	View Mode/ transparency: Control+Shift+2
+
+	View Mode/ Alpha Overlay: Control+Shift+3
+
+	View Mode/ Color Only: Control+Shift+4
+
+	View Mode/ Red: Control+Shift+5
+
+	View Mode/ Green: Control+Shift+6
+
+	View Mode/ Blue: Control+Shift+7
+
+	View Mode/ Alpha: Control+Shift+8
+
+	View Mode/ Inverted Alpha: Control+Shift+9
+
+
+
+
+
+	
+
+	
+
+

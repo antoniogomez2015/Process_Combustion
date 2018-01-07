@@ -1,0 +1,55 @@
+
+
+Track/seguimiento de movimiento en combustion 4
+
+
+	1_seleccionamos la layer/capa, a la cuál deseamos aplicarle los parámetros del track/estabilizado, en el outlines/workspace
+
+	2_luego de seleccionar la capa en el workspace, seleccionamos el viewer, de la composición master, ó de la composición donde tengamos el footage
+
+	3_ahora vamos al "Menú/Tracker", de la capa seccionada, shortcut (F7)
+
+	4_ahora con la capa seleccionada en el workspace, y estando el Menú/Tracker, estará disponible la opción "Menú/Tracker/Source/", en la cuál 
+
+	seleccionaremos el footage, del cuál deseamos extraer los datos del "Tracker/movimiento"
+
+	5_luego de seleccionar el "Source/(Footage)", debemos seleccionar las opciones del "Track/", en las cuales se encuentras las opciones: (podemos seleccionar una ó varias de las opciones)
+
+		5.1_"Position", para solo registrar las porpiedades de posición (esta opción sólo requiere un punto de seguimiento)
+
+		5.2_"Scale", para registrar las propiedades de escala (esta opción requiere dos punto de seguimiento)
+
+		5.3_"Rotation", para registrar las propiedades de rotación (esta opción requiere dos punto de seguimiento)
+
+		5.4_"Axis", nos permite seleccionar las cordenadas deseadas a tomar en cuentra por el rastreador, entre "Y", "X", y "XY", que es lo más recomendado
+
+		5.5_"Mode", lo más recomendado es (relative)
+
+		5.6_"Parent to Source", esta opción nos permite la posibilidad de también poderle pasar los datos de track/seguimiento, al footage, al mismo tiempo que el motivo ó layer seleccionada
+
+	6_cuando hemos seleccionado una opción de las del paso (5), ejemplo: "Position", se agregará el viweer, un rastreador
+
+		6.1_ahora debemos reubicar el rastreador a la zona del motivo deseada, esta zona debe de tener un contrastre relevante ya que la herramienta de track/seguimiento, 
+
+		funciona por medio de la luminancia, para reubicar la herramientra del rastreador debemos tomarla por su parte más central y arrastrarla haciendo right+click+draw, 
+
+		y soltarla en el área de contrastre deseado, dejando el mámimo contrastre en la parte más central del rastreador
+
+		6.2_el rastreador consta de una zona de rastreo interior y, una zona de seguimiento exterior
+
+		6.3_para modificar los rectángulos de ajuste tanto de la zona de rastreo como de la zona de seguimiento, debemos hacerlo arrastrando en su perímetro de forma libre ó
+
+		de forma proporcional, arrastrando más el uso de la tecla (Control)/(Shift), así, el ajuste de los restángulos de áreas será proporcional en su escala de ajuste
+
+	7_ahora debemos colocar el cabezal del timeline, en el inicio, shortcut, (Home), ó en el punto deseado para iniciar el track/seguimiento en el punto deseado
+
+	8_luego con el rastreador ubicado y seleccionado en el viewer, así, estará disponible en el "Layer seleccionada/Menú/Tracker/Analize/"
+
+		8.1_las opciones de "Analize", es un reproductor, del timeline, del tracker, el cuál nos permitirá hacer "Tracker/seguimiento", hacia adelante y hacia a tras
+		
+		así, como reproducir hacia a delante de forma continua, así, podremos hacer seguimiento de forma detallada y detenida  así, como manera continua,
+
+		al terminar, se generarán los keyframes, en la layer/motive, y, habremos transferido los datos de movimiento a esta capa/motivo, deseada
+
+		
+

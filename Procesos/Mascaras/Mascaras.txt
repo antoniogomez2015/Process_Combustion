@@ -1,0 +1,68 @@
+
+
+
+	Trabajo con Máscaras
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	1_importamos el el material deseado shortcut: "Control+I"
+
+
+
+	2_el material importado "Layer/footage", con el material importado "layer", seleccionado le agregamos a este un 
+	
+	nodo/operator "Add Operator/Mask/Draw Mask"
+
+
+	3_ahora hacemos doble click, sobre el "nodo/operator/draw mask", para así, abrirlo en el viewer y entrar en sus 
+
+	opciones de edición
+
+
+
+	4_ahora vamos al pànel de "Toolbar", y seleccionamos la herramienta "Bezier Mask Tool", y procedemos a crear el 
+
+	spline, punto a punto hacer carrar el circuito que conformará la máscara, al terminar de crear y cerrar la pline, 
+
+	que conforma la máscara se creará un nuevo en el panel "Workspace/Draw Mask/(Polygon Mask)", así, para editar la 
+
+	máscara creada tendremos que seleccionar el viewer y luego el control "Draw Mask/Polygon Mask"
+
+
+
+	5_ahora veremos las opciones de edición para la splines que conforma la máscara:
+
+
+		5.1_para convertir un vertex de tipo linear a uno de tipo smooth, esto lo hacemos seleccionando el 
+
+		botón "vertex + control", en el panel "Tool Bar", más una forma más fácil es haciendo 
+
+		"Control + Mouse Left Click", sobre un vertex point, directamente en el viewport, del panel layer edit
+
+
+		5.2_para mover ambos handles de manera uniforme de un vertex en modo smooth, basta con tomar un handle 
+
+		y arrastrarlo para un handle mueva el otro en forma contraria
+
+
+		5.3_para mover un handle de manera independiente de un vertex en modo smooth, tendremos que seleccionarlo 
+
+		con "control", así, este se moverá independiente del otro
+
+
+		5.4_para reestablecer la paridad de movimiento de ambos handles será necesario convertirlo nuevamente 
+
+		en un vertex de tipo "Linear", para luego volverlo a contertir en un vertex de tipo "Smooth"
+
+
+
+
+
+
+

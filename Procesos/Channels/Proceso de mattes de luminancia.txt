@@ -1,0 +1,57 @@
+
+
+
+Podemos crear mates de luminancia para usarlos como alphas para layers y footage/media files
+
+
+	1_primera parte: resaltado de las áreas oscuras ó negras de la imágen
+
+
+		1.1_primero tomamos una copia del footage, que conforma la capa a la cuál deseamos hacer un matte ó alpha de si misma (Shift + F12), en el nograph
+
+		1.2_ahora ha esta copia del footage, de la layer, deseada le creamos un nodo de "Paint", luego procedemos a pintar en modo RGB, en color negro sobre las partes
+		
+		que deseamos sean alphas ó las áreas que deseamos eliminar
+
+		1.3_ahora ha este nodo de paint, le podemos agregar un nodo de corrección de color CC Curve, para realzar así, el contraste y suprimir los detalles en los medios
+
+
+	2_segunda parte: resaltado de las áreas blancas ó claras de la imágen
+
+		
+		2.1_primero tomamos una copia del footage, que conforma la capa a la cuál deseamos hacer un matte ó alpha de si misma (Shift + F12), en el nograph
+
+		2.2_ahora ha esta copia del footage, de la layer, deseada le creamos un nodo de "Paint", luego procedemos a pintar en modo RGB, en color blanco sobre las partes
+		
+		que deseamos sean reveladas por el alpha ó matte
+
+		2.3_ahora ha este nodo de paint, le podemos agregar un nodo de corrección de color CC Curve, para realzar así, el contraste y suprimir los detalles en los medios
+
+
+	3_ahora para unir estos dos artes de pintura, tanto en el que resaltamos los blancos como el de los netro en un nodo como una sola información consolidada para luego utilizarla como matte,
+
+	para esto debemos crear nodo de "Copound Alpha Arthmetic", este nodo trae 2 inpus, de entrada, en los cuál conectaremos ambos árboles de nodos, el arbol de nodos de los blancos y el arbol de nodo de los negros 
+
+	
+		3.1_el nodo "Copound Alpha Arthmetic", debemos configurar "Operator/Multiply", "Inout/Luminance" y en "Blend/100%"
+
+
+	4_ahora al nodo "Copound Alpha Arthmetic", le agregaremos el nodo Channel/invert, para ver si hace falta invertir la información para el proceso de matte por luma/luminancia
+
+		4.1_en este nodo "invert", devemos configurar "Channel/Alpha"
+
+
+	5_ahora para poder crearle ó asignarle un matte a la layer deseada que es porte de la composición, debemos agregarle a la layer deseada un nodo de tipo "Channel/Set Matte", 
+
+	ya que la layer deseada oroginalmente no tine un canal alpha asignado ni el nodo "Layer/footage", tampoco disponen de una input, para mattes ó alphas auxiliares, así, el nodo que le agregamos
+
+	a la layer deseada "Set Matte", dispone de 2 inputs, de entrada, en el primero el (blanco), conectaremos la imágen del footage de la layer, deseada y, en el segundo input, el (azul),
+
+	conectaremos el arbol que tenemos elaborado a través del nodo "Copound Alpha Arthmetic", ó "Invert", respectivamente, así la layer deseada optendrá un canal alpha, a través de un matte de luminancia
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+
+
+Estabilizado de movimiento en combustion 4
+
+
+	1_seleccionamos en el workspace/outliner, la layer/capa, a la cuál deseamos aplicarle el estabilizado 
+
+	2_a la capa seleccionada, le aplicamos un operdor, "Nodo/Footage/Add operator/Stabilize/Stabilize 1 Point",
+
+	3_ahora seleccionamos el Nodo/Stabilize 1 Point, en el workspace, y vamos al "menú/Stabilize 1 Point Controls", shortcut (F8)
+
+	4_ahora en el "Menú/Stabilize 1 Point Controls", tendremos las opciones de (Stabilize Point/+), este (+), nos permite agregar un rastreador/estabilizador
+
+		4.1_el más (+), nos permite hacer un "Pick quick", para crear un rastreador/estabilizador, en un área determinada en el footage, deseado dentro del viewer,
+
+		para lo cuál debemo hacer click, en un área la cuál disponga de un contraste relevante, tomando las mismas consideraciones y criterior de las técnicas del track/rastreador,
+
+		podemos hacer "pick quick", una vez ó volver hacer varias veces hasta ajustarlo en un área deseada que nos funcione, así, el "Pick Quick", hará de "aspa", 
+
+		mientras que externamente y de forma paralela se agregará una herramienta de área de estabilizado, la cuál se encontrará alejada del punto del aspa de track/seguimiento
+
+	5_luego de hacer posicionado el "Pick Quick", en el viewer, del punto de área de "Stabilize 1 Point", debemos ir al "Menú/Tracker", shortcut (F7)
+
+		5.1_ya en el "Menú/Track", con la capa del footage del estabilizado deseado deseccionada veremos que la opción de "Source/", no está disponble,
+
+		esto sucede por que el "Source", lo tomará de las propiedades del Nodo/Stabilize 1 Pint, el cuál asignará el "Footage/Source", y tomará los dados del track/seguimiento
+
+		y los invertirá para convertirlos en los valores del estabilizado, los cuales se los asígnará al Nodo/Stabilize 1 Point
+
+		5.2_si el "Nodo", de estabilizado que le agregamos al footage, deseado de estabilizar es de un punto, (Stabilize 1 Point), debemos seleccionar en el 
+
+		"Layer deseada/Menú/track/Track/", la opciones de (Position), ya que esta es la opción que nos proporciona datos de posición en (XY), los cuales invertirá posterior mente 
+
+		para compensar y neutralizar el movimiento ó (estabilizar), más si el el Nodo que le agregamos al footage/layer, deseado es de 2 puntos, "Stabilize 2 Point", entonces tendremos 
+
+		que seleccionar en "Layer deseada/Menú/track/Track/", las opciones de (position), más (Scale), y (Rotation), opcional si lo deseamos, ya que al haber más de 2 opciones seleccionadas
+
+		requerirá dos puntos de seguimiento como lo requiere el "Nodo/Stabilize 2 Point"
+
+		5.3_al seleccionar una opción en "Layer deseada/Menú/track/Track/", no tendremos que ajustar la posición y ajustar las áreas ó rectángulos del rastreador, ya que este adoptará
+
+		los parámetros de ajuste que le asignamos al aspa del "Pick Quick", del "Nodo/Stabilize 1 Point"
+
+	6_ahora con el rastreador seleccionado el viewer, estarán disponibles las opciones del "Layer deseada/Menú/track/Track/", "Analize"
+
+		6.1_ahora debemos colocar el cabezal del timeline, al inicio del timelien, ó en el área donde necesitemos que inicie el track/seguimiento
+
+		6.2_las opciones del "Analize", son un reproductor que nos permiten hacer track/seguimiento, hacia a delante y hacia a tras, así, como seguimiento continuo, así,
+
+		al terminar el track/seguimiento se habrán transferido los datos del track/seguimiento hasta el nodo de "Stabilize 1 Point"
+
+		6.3_al realizar el proceso de track/seguimiento, se apagará el "Nodo/Stabilize 1 Point", por ende al terminar el proceso de Track/Seguimieto, debemos prender ó activar el Nodo/Stabilize 1 Point, 
+
+		para así, poder ver el resultado del estabilizado de la layer/footage, deseado en el viewer
+
+		

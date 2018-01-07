@@ -1,0 +1,38 @@
+
+
+
+podemos hacer alphas, a través de mates obtenidos de una ó más máscaras aplicadas así, como también la suma de point, por luminancias para en su conjunto 
+
+consolidarlos y conformar un canal alpha asignado a una layer
+
+
+	1_podemos agregarle al footage/media file, un nodo de "Mask/Draw mask", para así, con este hacer selecciones específicas de la imágen, de ser muy compleja
+
+	la imágen y lo que desemos seleccionar, podriamos agregar más nodos "Draw Mask", y continuar haciendo más selecciones de tipo roto
+
+
+	2_también podríamos complementar con selecciones semi trasparentes, para esto hacemos una copia del footage/media file deseado shortcut: Shift + F12,
+
+	y ha este footage, agregarle un nodo de "paint", y empezar a pintar las zonas que deseamos oscureces pintando con un color RGB, negro, luego ha este nodo
+
+	"paint", le agregamos un nodo de "Channel/Alpha Arithmetic", para controlar mejor el matte, resultante y colocamos sus parámetro en:
+
+	Opetador: Multiply, Operand %, el porcentaje que desiemos, Blend %, el que desiemos
+
+
+	3_ahora debemos consolidar ambos tipos de mattes, que hemos creado, tando los realizados por máscaras, como los realizados por paint, para creamos un nodo
+
+	de "Channel/Compound Alpha Arithmetic", este nodo trae 2, inputs, de entrada, así, en una entrada coloremos el arbol de mattes, creados por máscaras y,
+
+	en el otro inut, colocaremos el arbol del matte, creado por paint, así, quedarán consolidados ambos mattes, a través de un solo nodo en un solo matte, compuesto
+
+
+	4_ahora debemos contemplar agregar un nodo de "Channel/Invert", en casos de que nos aparesca el matte, de forma invertida para así, con el nodo invert, invertirlo
+
+
+	5_y finalmente debemos agregarlo al nodo princial de footage/media files de la layer deseada un nodo de "Channel/Set Matte", este nodo tiene 2 inputs,
+
+	en el input (blanco), colocaremos el footage/media file, y el input (white), colocaremos el matte, compuestro que hemos desarrollado, en el nodo final 
+
+	"Compount Alpha Arithmetic" , ó "Invert", respectivamente, así, se le agregará a la layer desea un canal alpha, a través del matte compuesto que hemos generado
+
